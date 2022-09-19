@@ -6,6 +6,7 @@
   }
   
 .board-container {
+    background-color: #9a7b4f;
     width: 900px;
     height: 900px;
     padding: 50px;
@@ -18,7 +19,68 @@
 }
 
 .game-board {
-    width: 800px;
+    width: 700px;
     height: 500px;
     display: grid;
+}
+
+.cell {
+  max-width: 250px;
+  min-width: 250px;
+  max-height: 250px;
+  min-height: 250px;
+}
+
+#a {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#b {
+  grid-column: 2;
+  grid-row: 1;
+  border-right: solid;
+  border-left: solid;
+}
+
+#c {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#d {
+  grid-column: 1;
+  grid-row: 2;
+  border-top: solid;
+  border-bottom: solid;
+}
+
+#e {
+  grid-column: 2;
+  grid-row: 2;
+  border: solid;
+}
+
+#f {
+  grid-column: 3;
+  grid-row: 2;
+  border-top: solid;
+  border-bottom: solid;
+}
+
+#g {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#h {
+  grid-column: 2;
+  grid-row: 3;
+  border-right: solid;
+  border-left: solid;
+}
+
+#i {
+  grid-column: 3;
+  grid-row: 3;
 }
