@@ -4,11 +4,21 @@
     font-family: "Helvetica", sans-serif;
     box-sizing: border-box;
   }
+  
+.board-container {
+    width: 900px;
+    height: 900px;
+    padding: 50px;
+    box-shadow: 0px 0px 14px 2px black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-  .board-container {
-    width: 70%;
-    background-color: blue;
-    margin: 0 auto;
-    font-size: 0;
-    border: 2px solid #000;
+.game-board {
+    width: 800px;
+    height: 500px;
+    display: grid;
 }
