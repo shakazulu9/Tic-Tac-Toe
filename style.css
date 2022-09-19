@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Helvetica", sans-serif;
+    font-family: 'Rubik Moonrocks', cursive;
     box-sizing: border-box;
   }
   
@@ -19,29 +19,28 @@
 }
 
 .game-board {
-    width: 700px;
-    height: 500px;
+    width: 450px;
+    height: 150px;
     display: grid;
+    
 }
 
 .cell {
-  max-width: 250px;
-  min-width: 250px;
-  max-height: 250px;
-  min-height: 250px;
+  max-width: 150px;
+  min-width: 150px;
+  max-height: 150px;
+  min-height: 150px;
+  border-width: thick !important;
 }
 
 #a {
   grid-column: 1;
   grid-row: 1;
-  border-top: solid;
-  border-left: solid;
 }
 
 #b {
   grid-column: 2;
   grid-row: 1;
-  border-top: solid;
   border-right: solid;
   border-left: solid;
 }
@@ -49,8 +48,6 @@
 #c {
   grid-column: 3;
   grid-row: 1;
-  border-right: solid;
-  border-top: solid;
 }
 
 #d {
@@ -58,7 +55,6 @@
   grid-row: 2;
   border-top: solid;
   border-bottom: solid;
-  border-left: solid;
 }
 
 #e {
@@ -72,15 +68,12 @@
   grid-row: 2;
   border-top: solid;
   border-bottom: solid;
-  border-right: solid;
   
 }
 
 #g {
   grid-column: 1;
   grid-row: 3;
-  border-left: solid;
-  border-bottom: solid;
 }
 
 #h {
@@ -88,12 +81,38 @@
   grid-row: 3;
   border-right: solid;
   border-left: solid;
-  border-bottom: solid;
 }
 
 #i {
   grid-column: 3;
   grid-row: 3;
-  border-right: solid;
-  border-bottom: solid;
+}
+
+.title{
+  line-height: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+}
+.info{
+  background-color: #795c34;
+  position: relative;
+  top: 450px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  border: inset thick;
+  border-radius: 10px;
+}
+
+button {
+  background-color:#4b371c;
+  border: 2px solid black;
+  padding: 20px 30px 20px 30px;
+  border-radius: 10px;
+  width: 100px ;
+  height: 40px;
+  position: relative;
+  top: 30px;
+  left: 200px;
 }
