@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="fight.js"></script>
+    <title>Tic Tac Toe</title>
+    
 </head>
 <body>
     <div class="title">
@@ -15,26 +17,22 @@
     <div class="board-container">
         
         <div class="game-board">
-            <div class="cell" id="a"></div>
-            <div class="cell" id="b"></div>
-            <div class="cell" id="c"></div>
-            <div class="cell" id="d"></div>
-            <div class="cell" id="e"></div>
-            <div class="cell" id="f"></div>
-            <div class="cell" id="g"></div>
-            <div class="cell" id="h"></div>
-            <div class="cell" id="i"></div>
+            <div data-index="1" class="cell " id="a"></div>
+            <div data-index="2" class="cell" id="b"></div>
+            <div data-index="3" class="cell" id="c"></div>
+            <div data-index="4" class="cell" id="d"></div>
+            <div data-index="5" class="cell" id="e"></div>
+            <div data-index="6" class="cell" id="f"></div>
+            <div data-index="7" class="cell" id="g"></div>
+            <div data-index="8" class="cell" id="h"></div>
+            <div data-index="9" class="cell" id="i"></div>
         </div>
 
 
         <div class="info">
-            <button type="button">Reset</button>
-            <p class="player-1"></p>
-            <p class ="player-2"></p>
+            <button id="reset">RESET</button>
         </div>
            
     </div>
-
-    <script defer src="fight.js"></script>
 </body>
 </html>
