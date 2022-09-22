@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="fight.js"></script>
-    <title>Tic Tac Toe</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="fight.js" defer></script>
+  <title>Document</title>
 </head>
 <body>
-    <div class="title">
-        <h1>TIC-TAC-TOE!</h1>
-    </div>
-
-    <div class="board-container">
-        
-        <div class="game-board">
-            <div data-index="1" class="cell " id="a"></div>
-            <div data-index="2" class="cell" id="b"></div>
-            <div data-index="3" class="cell" id="c"></div>
-            <div data-index="4" class="cell" id="d"></div>
-            <div data-index="5" class="cell" id="e"></div>
-            <div data-index="6" class="cell" id="f"></div>
-            <div data-index="7" class="cell" id="g"></div>
-            <div data-index="8" class="cell" id="h"></div>
-            <div data-index="9" class="cell" id="i"></div>
-        </div>
-
-        <div class="info">
-            <button id="reset">RESET</button>
-        </div>
-           
-    </div>
+  <div class="board" id="board">
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+  </div>
+  <div class="winning-message" id="winningMessage">
+    <div data-winning-message-text></div>
+    <button id="restartButton">Restart</button>
+  </div>
 </body>
 </html>
